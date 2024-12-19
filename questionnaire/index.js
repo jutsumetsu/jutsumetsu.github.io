@@ -97,7 +97,7 @@ function submitTRPGFrom(shouldTurn){
     });
 
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://backend.jutsumetsu.top/data', true);
+    xhr.open('POST', 'https://backend.jutsumetsu.top/data', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function(){
         if (xhr.readyState === 4 && xhr.status === 200){
