@@ -191,3 +191,6 @@ div#archive {
 .links-of-author-item .fa-globe {
   font-size: 15px;
 }
+.announcement_content a {
+  text-align: center;
+}
