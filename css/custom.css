@@ -108,3 +108,86 @@ div#archive {
 #aside-content .avatar-img :hover{
   transform: none;
 }
+.links-of-author {
+  margin-top: 20px;
+  text-align: left;
+}
+.links-of-author a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-bottom-color: #555;
+  font-size: 13px;
+}
+.links-of-author a:before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 3px;
+  content: " ";
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #ffedc1;
+}
+.links-of-author-item a:before {
+  display: none;
+}
+.links-of-author-item a {
+  border-bottom: none;
+  text-decoration: underline;
+}
+.feed-link {
+  border-top: 1px dotted #ccc;
+  border-bottom: 1px dotted #ccc;
+  text-align: center;
+}
+.feed-link a {
+  display: block;
+  color: #fc6423;
+  border: none;
+  font-size: 16px;
+}
+.feed-link a:hover {
+  background: none;
+  color: #e34603;
+}
+.feed-link a:hover i {
+  color: #e34603;
+}
+.links-of-author {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.links-of-author-item {
+  margin: 5px 0 0;
+  width: 50%;
+}
+.links-of-author-item a {
+  max-width: 216px;
+  box-sizing: border-box;
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 0;
+  padding: 0 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: #555;
+}
+.links-of-author-item a {
+  display: block;
+  text-decoration: none;
+}
+.links-of-author-item a:hover {
+  border-radius: 4px;
+  background: #eee;
+}
+.links-of-author-item .fa {
+  margin-right: 2px;
+  font-size: 16px;
+}
+.links-of-author-item .fa-globe {
+  font-size: 15px;
+}
