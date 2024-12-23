@@ -112,6 +112,22 @@ function submitTRPGFrom(shouldTurn){
         xhr.send(data);
     }
 
+    const xhr2 = new XMLHttpRequest();
+    xhr2.open('POST', 'https://backend.jutsumetsu.top/api', true);
+    xhr2.setRequestHeader('Content-Type', 'application/json');
+    xhr2.onreadystatechange = function(){
+        if (xhr2.readyState === 4 && xhr2.status === 200){
+            console.log('数据已成功发送到服务器');
+        };
+    }
+    // 这里可以进一步处理数据，比如发送到服务器
+    if(!shouldTurn){
+        xhr2.send(data);
+    }
+    else{
+        xhr2.send(data);
+    }
+
 }
 
 
