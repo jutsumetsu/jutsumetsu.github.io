@@ -96,8 +96,24 @@ function submitTRPGFrom(shouldTurn){
         '理念相悖情景': RPT3
     });
 
+    // const xhr = new XMLHttpRequest();
+    // xhr.open('POST', 'https://backend.jutsumetsu.top/data', true);
+    // xhr.setRequestHeader('Content-Type', 'application/json');
+    // xhr.onreadystatechange = function(){
+    //     if (xhr.readyState === 4 && xhr.status === 200){
+    //         console.log('数据已成功发送到服务器');
+    //     };
+    // }
+    // // 这里可以进一步处理数据，比如发送到服务器
+    // if(!shouldTurn){
+    //     xhr.send(data);
+    // }
+    // else{
+    //     xhr.send(data);
+    // }
+
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', 'https://backend.jutsumetsu.top/data', true);
+    xhr.open('POST', 'https://backend.jutsumetsu.top/api', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function(){
         if (xhr.readyState === 4 && xhr.status === 200){
@@ -110,22 +126,6 @@ function submitTRPGFrom(shouldTurn){
     }
     else{
         xhr.send(data);
-    }
-
-    const xhr2 = new XMLHttpRequest();
-    xhr2.open('POST', 'https://backend.jutsumetsu.top/api', true);
-    xhr2.setRequestHeader('Content-Type', 'application/json');
-    xhr2.onreadystatechange = function(){
-        if (xhr2.readyState === 4 && xhr2.status === 200){
-            console.log('数据已成功发送到服务器');
-        };
-    }
-    // 这里可以进一步处理数据，比如发送到服务器
-    if(!shouldTurn){
-        xhr2.send(data);
-    }
-    else{
-        xhr2.send(data);
     }
 
 }
