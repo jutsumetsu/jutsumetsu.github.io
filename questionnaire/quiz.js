@@ -3,11 +3,12 @@ $(document).ready(function () {  // Use closure, no globals
     let current_question = 0;
     let questions;
     let model;
+    let form;
 
     initialize();
 
     async function initialize(){
-        var form = JSON.parse(localStorage.getItem('TRPGFrom'));
+        form = JSON.parse(localStorage.getItem('TRPGFrom'));
         localStorage.removeItem('TRPGFrom');
         console.log('QQ号：',form["QQ号"]);
         model = await $.getJSON('POT.json')
@@ -62,7 +63,7 @@ $(document).ready(function () {  // Use closure, no globals
 
     function save_choice(text){
         form[`${questions[current_question].text}`] = text;
-        console.log(`${questions[current_question].text}`, text);
+        console.log(`${questions[current_question].text}-`, text);
     }
 
     function results() {

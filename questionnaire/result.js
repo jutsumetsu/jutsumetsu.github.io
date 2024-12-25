@@ -13,7 +13,7 @@ $(document).ready(function () {
         }
         xhr.send(localStorage.getItem('TRPGFrom'));
         localStorage.removeItem('TRPGFrom');
-        var score = JSON.parse(localStorage.getItem('Score'));
+        score = JSON.parse(localStorage.getItem('Score'));
         localStorage.removeItem('Score');
         model = await $.getJSON('POT.json');
 
