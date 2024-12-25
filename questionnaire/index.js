@@ -109,15 +109,16 @@ function submitTRPGFrom(shouldTurn){
         xhr.send(data);
     }
     else{
-        xhr.send(data);
+        localStorage.setItem("TRPGFrom",data);
     }
 }
 
 
 $("#btn-submit").click(function(){
-    submitTRPGFrom();
+    submitTRPGFrom(false);
 });
 
 $("#btn-quiz").click(function(){
-    submitTRPGFrom();
+    submitTRPGFrom(true);
+    location.href= './quiz.html';
 });
