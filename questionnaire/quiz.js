@@ -5,6 +5,7 @@ $(document).ready(function () {  // Use closure, no globals
     let model;
     let form;
     let choice = [];
+    let originalIndices = [];
 
     initialize();
 
@@ -16,7 +17,6 @@ $(document).ready(function () {  // Use closure, no globals
             .fail(()=>console.log("failed to load questions"));
         questions = model.questions;
         scores = new Array(questions.length).fill(0);
-        let originalIndices = [];
         for (let i = 0; i < questions.length; i++) {
             originalIndices.push(i);
         }
