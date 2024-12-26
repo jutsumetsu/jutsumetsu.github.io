@@ -71,16 +71,6 @@ $(document).ready(function () {  // Use closure, no globals
         console.log(`${questions[current_question].text}  - `, text);
     }
 
-    function restoreChoiceOrder() {
-        let restoredChoice = {};
-        originalIndices.forEach((index) => {
-            const questionText = model.questions[index].text;
-            const choiceData = choice[questionText];
-            restoredChoice[questionText] = choiceData;
-        });
-        return restoredChoice;
-    }
-
     function results() {
         const d = model.dimensions.length;
         let score = new Array(d).fill(0);
@@ -92,8 +82,12 @@ $(document).ready(function () {  // Use closure, no globals
             }
         }
 
-        choice = restoreChoiceOrder();
-        form = $.extend(true, {}, form, choice);
+        let OModel = $.getJSON('POT.json')
+        .fail(()=>console.log("failed to load questions"));
+        for (let i = 0; i < questions.length; i ++) {
+            const questionText = OModel.questions[i].text;
+            form[questionText] = choice[questionText];
+        }
 
         for (let key = 0; key < d; key ++ ){
             score[key] = (score[key] + max_score[key]) / (2*max_score[key]);
