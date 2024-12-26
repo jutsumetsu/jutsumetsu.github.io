@@ -68,7 +68,7 @@ $(document).ready(function () {  // Use closure, no globals
 
     function save_choice(text){
         choice[`${questions[current_question].text}`] = text;
-        console.log(`${questions[current_question].text}-`, text);
+        console.log(`${questions[current_question].text}  - `, text);
     }
 
     function restoreChoiceOrder() {
@@ -76,7 +76,7 @@ $(document).ready(function () {  // Use closure, no globals
         originalIndices.forEach((index) => {
             const questionText = model.questions[index].text;
             const choiceData = choice[questionText];
-            restoredChoice[questionText] = choiceData.text;
+            restoredChoice[questionText] = choiceData;
         });
         return restoredChoice;
     }
