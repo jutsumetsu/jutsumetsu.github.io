@@ -4,6 +4,7 @@ $(document).ready(function () {  // Use closure, no globals
     let questions;
     let model;
     let form;
+    let choice;
 
     initialize();
 
@@ -15,6 +16,10 @@ $(document).ready(function () {  // Use closure, no globals
             .fail(()=>console.log("failed to load questions"));
         questions = model.questions;
         scores = new Array(questions.length).fill(0);
+        let originalIndices = [];
+        for (let i = 0; i < questions.length; i++) {
+            originalIndices.push(i);
+        }
         // Shuffle Quesions
         questions.sort(() => Math.random() - 0.5);
 
@@ -62,8 +67,16 @@ $(document).ready(function () {  // Use closure, no globals
     }
 
     function save_choice(text){
-        form[`${questions[current_question].text}`] = text;
+        choice[`${questions[current_question].text}`] = text;
         console.log(`${questions[current_question].text}-`, text);
+    }
+
+    function restoreChoiceOrder() {
+        let restoredChoice = {};
+        originalIndices.forEach((index) => {
+            restoredChoice[`${questions[index].text}`] = choice[`${questions[index].text}`];
+        });
+        return restoredChoice;
     }
 
     function results() {
@@ -76,6 +89,9 @@ $(document).ready(function () {  // Use closure, no globals
                 max_score[key] += Math.abs(questions[i].evaluation[key]);
             }
         }
+
+        choice = restoreChoiceOrder();
+        form.push(...choice);
 
         for (let key = 0; key < d; key ++ ){
             score[key] = (score[key] + max_score[key]) / (2*max_score[key]);
