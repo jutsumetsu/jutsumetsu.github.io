@@ -5,7 +5,7 @@ $(document).ready(function () {  // Use closure, no globals
     let model;
     let form;
     let choice = {};
-    let originalIndices = [];
+    let originalQuestions = {};
 
     initialize();
 
@@ -17,9 +17,7 @@ $(document).ready(function () {  // Use closure, no globals
             .fail(()=>console.log("failed to load questions"));
         questions = model.questions;
         scores = new Array(questions.length).fill(0);
-        for (let i = 0; i < questions.length; i++) {
-            originalIndices.push(i);
-        }
+        originalQuestions = JSON.parse(JSON.stringify(questions));
         // Shuffle Quesions
         questions.sort(() => Math.random() - 0.5);
 
@@ -82,10 +80,8 @@ $(document).ready(function () {  // Use closure, no globals
             }
         }
 
-        let OModel = $.getJSON('POT.json')
-        .fail(()=>console.log("failed to load questions"));
         for (let i = 0; i < questions.length; i ++) {
-            const questionText = OModel.questions[i].text;
+            const questionText = originalQuestions[i].text;
             form[questionText] = choice[questionText];
         }
 
