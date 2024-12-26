@@ -4,7 +4,7 @@ $(document).ready(function () {  // Use closure, no globals
     let questions;
     let model;
     let form;
-    let choice;
+    let choice = [];
 
     initialize();
 
