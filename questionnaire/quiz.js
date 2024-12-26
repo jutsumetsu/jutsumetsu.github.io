@@ -91,9 +91,7 @@ $(document).ready(function () {  // Use closure, no globals
         }
 
         choice = restoreChoiceOrder();
-        for (let i = 0; i < questions.length; i ++ ){
-            form.push(choice[i]);
-        }
+        form = $.extend(true, {}, form, choice);
 
         for (let key = 0; key < d; key ++ ){
             score[key] = (score[key] + max_score[key]) / (2*max_score[key]);
