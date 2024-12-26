@@ -20,7 +20,6 @@ $(document).ready(function () {  // Use closure, no globals
         for (let i = 0; i < questions.length; i++) {
             originalIndices.push(i);
         }
-        console.log('original first: ', );
         // Shuffle Quesions
         questions.sort(() => Math.random() - 0.5);
 
