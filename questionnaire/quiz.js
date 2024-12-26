@@ -4,7 +4,7 @@ $(document).ready(function () {  // Use closure, no globals
     let questions;
     let model;
     let form;
-    let choice = [];
+    let choice = {};
     let originalIndices = [];
 
     initialize();
@@ -20,6 +20,7 @@ $(document).ready(function () {  // Use closure, no globals
         for (let i = 0; i < questions.length; i++) {
             originalIndices.push(i);
         }
+        console.log('original first: ', );
         // Shuffle Quesions
         questions.sort(() => Math.random() - 0.5);
 
@@ -74,7 +75,9 @@ $(document).ready(function () {  // Use closure, no globals
     function restoreChoiceOrder() {
         let restoredChoice = {};
         originalIndices.forEach((index) => {
-            restoredChoice[`${questions[index].text}`] = choice[`${questions[index].text}`];
+            const questionText = model.questions[index].text;
+            const choiceData = choice[questionText];
+            restoredChoice[questionText] = choiceData.text;
         });
         return restoredChoice;
     }
