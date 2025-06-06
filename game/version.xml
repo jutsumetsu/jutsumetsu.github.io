@@ -1,0 +1,52 @@
+<versionData>
+    <gameVersion>0.1.0α</gameVersion>
+    <buildVersion>0.1.0α</buildVersion>
+    <resourceVersion>0.1.0α</resourceVersion>
+    <releaseDate>2025-06-07+08:00</releaseDate>
+    <releaseNote>
+        测试
+    </releaseNote>
+    <mailData>
+        <updateMail>
+            <mail>
+                <sender>船长辛迪</sender>
+                <title>版本更新奖励</title>
+                <content>版本更新奖励</content>
+                <date>2024-12-31+08:00</date>
+                <gift>
+                    <item id="10016" num="20"/>
+                    <item id="10225" num="5"/>
+                    <item id="1" num="5000"/>
+                </gift>
+            </mail>
+        </updateMail>
+        <dailyLoginMail>
+            <sender>船长辛迪</sender>
+            <title>登入奖励</title>
+            <content>登入奖励</content>
+            <date>2024-12-31+08:00</date>
+            <gift>
+                <item id="10016" num="5"/>
+                <item id="10201" num="5"/>
+                <item id="1" num="2000"/>
+            </gift>
+        </dailyLoginMail>
+    </mailData>
+    <petData>
+        <petNum>324</petNum>
+        <minPetId>1</minPetId>
+        <maxPetId>20000</maxPetId>
+        <topicPetId>12939,14760,143,195,197,199</topicPetId>
+    </petData>
+    <skillData>
+        <skillNum>2103</skillNum>
+        <minSkillId>10001</minSkillId>
+        <maxSkillId>12103</maxSkillId>
+    </skillData>
+    <missionData>
+        <mainCount>6</mainCount>
+        <sideCount>0</sideCount>
+        <dailyCount>0</dailyCount>
+        <eventCount>0</eventCount>
+    </missionData>
+</versionData>
