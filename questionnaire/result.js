@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     async function initialize() {
         const xhr = new XMLHttpRequest();
-        xhr.open('POST', 'https://backend.jutsumetsu.top/api', true);
+        xhr.open('POST', 'https://backend.jutsumetsu.top/api/questionnaire', true);
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.onreadystatechange = function(){
             if (xhr.readyState === 4 && xhr.status === 200){
