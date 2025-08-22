@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>学习笔记·微积分</title>
+      <link href="/posts/9a42fac1.html"/>
+      <url>/posts/9a42fac1.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="第1章-函数与模型"><a href="#第1章-函数与模型" class="headerlink" title="第1章 函数与模型"></a>第1章 函数与模型</h2><h3 id="1-1-表示函数的四种方法"><a href="#1-1-表示函数的四种方法" class="headerlink" title="1.1 表示函数的四种方法"></a>1.1 表示函数的四种方法</h3><blockquote><p>函数$f$是一个规则，按照它，集合$A$中的每一个元素$x$都恰好在集合$B$中有一个元素与之对应，称之为$f(x)$</p></blockquote><h4 id="函数的表示法"><a href="#函数的表示法" class="headerlink" title="函数的表示法"></a>函数的表示法</h4><p>有四种方法来表示一个函数：</p><ul><li><p>描述法：用语言来描述。</p><ul><li>从函数的文字描述中得出显式代数公式的技巧，在解决求变量最大最小值问题上很有用。</li></ul></li><li><p>数值法：用函数值的列表。</p><ul><li>微积分的思想能够应用于数值法的表格，显式公式并非必须。</li></ul></li><li><p>直观法：用函数图像。</p></li><li><p>代数法：用显式公式，如圆面积$A(r)&#x3D;\pi r^2$。</p></li></ul><blockquote><p><strong>垂线测试</strong> $xOy$平面内的一条曲线，当且仅当没有一条垂线与其相交一次一上时为函数图像</p></blockquote><p>垂线测试能够用于判断$xOy$平面上什么样的曲线才是函数图像。</p><ul><li>抛物线$x&#x3D;y^2 - 2$不是$x$的函数的图像，因为有垂线两次穿过抛物线，它实际上是包含了两个$x$的函数的图像。</li></ul><h4 id="分段函数"><a href="#分段函数" class="headerlink" title="分段函数"></a>分段函数</h4><ul><li><p><strong>分段函数</strong>：在定义域的不同部分用不同公式定义的函数，绝对值函数是典型的分段函数。</p><ul><li>从一个值跳到下一个值的分段函数叫作阶梯函数（详见第2章）。</li></ul></li></ul><h4 id="对称"><a href="#对称" class="headerlink" title="对称"></a>对称</h4><ul><li><p><strong>偶函数</strong>：偶函数$f$对其定义域里的每一个$x$都有$f(-x)&#x3D;f(x)$，几何上图像关于$y$轴对称。</p></li><li><p><strong>奇函数</strong>：奇函数$f$对其定义域里的每一个$x$都有$f(-x)&#x3D;-f(x)$，几何上图像关于原点对称。</p></li></ul><h4 id="递增和递减函数"><a href="#递增和递减函数" class="headerlink" title="递增和递减函数"></a>递增和递减函数</h4><blockquote><p>函数$f$称为在区间$I$上递增，如果当$x_1$和$x_2$在$I$上且$x_1&lt;x_2$，则</p><p>$$<br>f(x_1)&lt;f(x_2)<br>$$</p><p>函数$f$称为在区间$I$上递减，如果当$x_1$和$x_2$在$I$上且$x_1&lt;x_2$，则</p><p>$$<br>f(x_1)&gt;f(x_2)<br>$$</p></blockquote><h3 id="1-2-数学模型：基本函数导引"><a href="#1-2-数学模型：基本函数导引" class="headerlink" title="1.2 数学模型：基本函数导引"></a>1.2 数学模型：基本函数导引</h3><ul><li><strong>数学模型</strong>：对现实问题某种现象的数学描述（通常表达为函数或方程），建模的目的是理解这些现象，如果可能的话对系统未来的行为作一些预测。</li></ul><p>数学建模的<strong>基本步骤</strong>：</p><ol><li><p>分析和确定自变量和因变量并为之命名、做一些假设使所研究的现象简化到数学上可以处理的程度，从而建立一个数学模型。</p></li><li><p>将数学知识和工具应用到我们已经得到的数学模型，设法给出该数学问题的解答。</p></li><li><p>将已经得到的数学上的结论，解释为原始的实际问题的信息，以此来说明现象或预测未来。</p></li><li><p>通过新的数据测试预测结果，如果预测与现实吻合得不好，就需要修正模型或确立一个新的模型，并重新开始循环这个过程。</p></li></ol><p>一个<strong>好</strong>的数学模型应该将现实问题简化到足以允许数学计算，但又精确到足以提供<strong>有价值</strong>的结论。</p><h4 id="线性模型"><a href="#线性模型" class="headerlink" title="线性模型"></a>线性模型</h4><ul><li><p><strong>线性函数</strong>：函数图像是一条直线的函数，可以用直线方程的斜率-截距形式表示：</p><ul><li><p>$y&#x3D;f(x)&#x3D;mx+b$，其中$m$为斜率，$b$是$y$轴截距</p></li><li><p>典型特征为以<strong>恒定</strong>的速度变化，斜率为变化速度。</p></li></ul></li></ul><p>如果没有自然规律或法则来帮助建立模型，那就构造一个经验模型，以收集到的数据为基础，寻找一条直观上能反映这些数据点基本趋势的曲线来“拟合”这些数据。</p><ul><li>可以使用<strong>线性回归</strong>(详见14.7节）来优化线性模型。</li></ul><h4 id="多项式"><a href="#多项式" class="headerlink" title="多项式"></a>多项式</h4><ul><li><p><strong>多项式</strong>：多项式$P(x)&#x3D;a_nx^n+a_{n-1}x^{n+1}+\cdots+a_2x^2+a_1x+a_0$，其中$n$为非负整数，$a_0$，$a_1$，$a_2$，$\cdots$，$a_n$为常数，称为多项式的系数。</p><ul><li><p>任何多项式的定义域都是$\mathbb{R}&#x3D;(-\infin,+\infin)$</p></li><li><p>如果首项$a_n\ne0$，则多项式次数为$n$，例如函数$P(x)&#x3D;2x^6-x^4+\frac25x^3+\sqrt2$为6次多项式。</p></li><li><p>一次多项式具有形式$P(x)&#x3D;mx+b$，所以是线性函数。</p></li><li><p>二次多项式具有形式$P(x)&#x3D;ax^2+bx+c$，称为二次函数。</p></li><li><p>三次多项式具有形式$P(x)&#x3D;ax^3+bx^2+cx+d$，称为三次函数</p></li></ul></li></ul><p>多项式被普遍运用在自然和社会科学中变量的建模上。</p><h4 id="幂函数"><a href="#幂函数" class="headerlink" title="幂函数"></a>幂函数</h4><ul><li><p><strong>幂函数</strong>：形式如$f(x)&#x3D;x^a$的函数，其中$a$为常数。常考虑几种情形：</p><ol><li><p>$a&#x3D;n$，其中$n$为正整数</p><p>$f(x)&#x3D;x^n$的大体形状依赖于$n$是奇数还是偶数，如果$n$是偶数，则$f(x)&#x3D;x^n$是偶函数，如果$n$是奇数，则$f(x)&#x3D;x^n$是奇函数。</p></li></ol></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习笔记 </category>
+          
+          <category> 数学 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 高等数学 </tag>
+            
+            <tag> 分析数学 </tag>
+            
+            <tag> 微积分学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>源海已知位面列表</title>
       <link href="/posts/626843b9.html"/>
       <url>/posts/626843b9.html</url>
@@ -15,9 +46,9 @@
           
           <category> 主神空间 </category>
           
-          <category> 欢堕空间 </category>
-          
           <category> JoJo的奇妙冒险 </category>
+          
+          <category> 欢堕空间 </category>
           
           <category> 世界观 </category>
           
@@ -48,9 +79,9 @@
       
       <categories>
           
-          <category> 圣羊空间 </category>
-          
           <category> 欢堕空间 </category>
+          
+          <category> 圣羊空间 </category>
           
           <category> 超级机器人大战 </category>
           

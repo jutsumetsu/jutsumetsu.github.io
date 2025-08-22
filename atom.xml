@@ -6,7 +6,7 @@
   <link href="https://jutsumetsu.top/atom.xml" rel="self"/>
   
   <link href="https://jutsumetsu.top/"/>
-  <updated>2025-08-19T17:45:56.002Z</updated>
+  <updated>2025-08-22T11:23:54.902Z</updated>
   <id>https://jutsumetsu.top/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>学习笔记·微积分</title>
+    <link href="https://jutsumetsu.top/posts/9a42fac1.html"/>
+    <id>https://jutsumetsu.top/posts/9a42fac1.html</id>
+    <published>2025-08-22T08:54:55.000Z</published>
+    <updated>2025-08-22T11:23:54.902Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;第1章-函数与模型&quot;&gt;&lt;a href=&quot;#第1章-函数与模型&quot; class=&quot;headerlink&quot; title=&quot;第1章 函数与模型&quot;&gt;&lt;/a&gt;第1章 函数与模型&lt;/h2&gt;&lt;h3 id=&quot;1-1-表示函数的四种方法&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="学习笔记" scheme="https://jutsumetsu.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    <category term="数学" scheme="https://jutsumetsu.top/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/%E6%95%B0%E5%AD%A6/"/>
+    
+    
+    <category term="高等数学" scheme="https://jutsumetsu.top/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="分析数学" scheme="https://jutsumetsu.top/tags/%E5%88%86%E6%9E%90%E6%95%B0%E5%AD%A6/"/>
+    
+    <category term="微积分学" scheme="https://jutsumetsu.top/tags/%E5%BE%AE%E7%A7%AF%E5%88%86%E5%AD%A6/"/>
+    
+  </entry>
   
   <entry>
     <title>源海已知位面列表</title>
@@ -37,9 +68,9 @@
     
     <category term="主神空间" scheme="https://jutsumetsu.top/categories/%E4%B8%BB%E7%A5%9E%E7%A9%BA%E9%97%B4/"/>
     
-    <category term="欢堕空间" scheme="https://jutsumetsu.top/categories/%E6%AC%A2%E5%A0%95%E7%A9%BA%E9%97%B4/"/>
-    
     <category term="JoJo的奇妙冒险" scheme="https://jutsumetsu.top/categories/JoJo%E7%9A%84%E5%A5%87%E5%A6%99%E5%86%92%E9%99%A9/"/>
+    
+    <category term="欢堕空间" scheme="https://jutsumetsu.top/categories/%E6%AC%A2%E5%A0%95%E7%A9%BA%E9%97%B4/"/>
     
     <category term="世界观" scheme="https://jutsumetsu.top/categories/%E4%B8%96%E7%95%8C%E8%A7%82/"/>
     
@@ -74,9 +105,9 @@
     
     
     
-    <category term="圣羊空间" scheme="https://jutsumetsu.top/categories/%E5%9C%A3%E7%BE%8A%E7%A9%BA%E9%97%B4/"/>
-    
     <category term="欢堕空间" scheme="https://jutsumetsu.top/categories/%E6%AC%A2%E5%A0%95%E7%A9%BA%E9%97%B4/"/>
+    
+    <category term="圣羊空间" scheme="https://jutsumetsu.top/categories/%E5%9C%A3%E7%BE%8A%E7%A9%BA%E9%97%B4/"/>
     
     <category term="超级机器人大战" scheme="https://jutsumetsu.top/categories/%E8%B6%85%E7%BA%A7%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E6%88%98/"/>
     
