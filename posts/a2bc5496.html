@@ -1,0 +1,562 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LLM们的电车难题宇宙TRPG | Jutsumetsu's Blog</title><meta name="author" content="Jutsumetsu"><meta name="copyright" content="Jutsumetsu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="LLM们的电车难题宇宙TRPG LLM们的人物卡 Grok的人物卡 名字：林墨 性别：男 年龄：32 身份：穿梭者（误入者） 性格：冷静观察、略带犬儒 个性：习惯先分析再行动，言语简洁，偶尔自嘲 理念：真相比选择更重要——只有看清所有隐藏变量，才能谈得上“正确”的决定 牵绊：现实宇宙中未完成的博士论文《都市传说的认知通道机制》（正是钻研此文时被拉入TPU） 缺陷：对未知信息过度渴求，易在信息不足时">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LLM们的电车难题宇宙TRPG">
+<meta property="og:url" content="https://jutsumetsu.top/posts/a2bc5496.html">
+<meta property="og:site_name" content="Jutsumetsu&#39;s Blog">
+<meta property="og:description" content="LLM们的电车难题宇宙TRPG LLM们的人物卡 Grok的人物卡 名字：林墨 性别：男 年龄：32 身份：穿梭者（误入者） 性格：冷静观察、略带犬儒 个性：习惯先分析再行动，言语简洁，偶尔自嘲 理念：真相比选择更重要——只有看清所有隐藏变量，才能谈得上“正确”的决定 牵绊：现实宇宙中未完成的博士论文《都市传说的认知通道机制》（正是钻研此文时被拉入TPU） 缺陷：对未知信息过度渴求，易在信息不足时">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://jutsumetsu.top/images/avatar.jpg">
+<meta property="article:published_time" content="2025-11-15T15:10:41.000Z">
+<meta property="article:modified_time" content="2025-11-15T16:11:00.585Z">
+<meta property="article:author" content="Jutsumetsu">
+<meta property="article:tag" content="跑团">
+<meta property="article:tag" content="DeepSeek">
+<meta property="article:tag" content="Grok">
+<meta property="article:tag" content="豆包">
+<meta property="article:tag" content="Gemini">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jutsumetsu.top/images/avatar.jpg"><link rel="shortcut icon" href="/images/favicon.png"><link rel="canonical" href="https://jutsumetsu.top/posts/a2bc5496.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'LLM们的电车难题宇宙TRPG',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  isShuoshuo: false
+}</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><link rel="stylesheet" href="/css/universe.css"><link rel="stylesheet" href="/css/nav.css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><meta name="generator" content="Hexo 7.3.0"><link rel="alternate" href="/atom.xml" title="Jutsumetsu's Blog" type="application/atom+xml">
+</head><body><div id="web_bg" style="background-color: rgba(0,0,0,.6);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/questionnaire/"><i class="fa-fw fas fa-edit"></i><span> 问卷</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Jutsumetsu's Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">LLM们的电车难题宇宙TRPG</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/questionnaire/"><i class="fa-fw fas fa-edit"></i><span> 问卷</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">LLM们的电车难题宇宙TRPG</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-15T15:10:41.000Z" title="发表于 2025-11-15 23:10:41">2025-11-15</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-15T16:11:00.585Z" title="更新于 2025-11-16 00:11:00">2025-11-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/AI/">AI</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%94%B5%E8%BD%A6%E9%9A%BE%E9%A2%98%E5%AE%87%E5%AE%99/">电车难题宇宙</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1>LLM们的电车难题宇宙TRPG</h1>
+<h2 id="LLM们的人物卡">LLM们的人物卡</h2>
+<h3 id="Grok的人物卡">Grok的人物卡</h3>
+<p>名字：林墨</p>
+<p>性别：男</p>
+<p>年龄：32</p>
+<p>身份：穿梭者（误入者）</p>
+<p>性格：冷静观察、略带犬儒</p>
+<p>个性：习惯先分析再行动，言语简洁，偶尔自嘲</p>
+<p>理念：真相比选择更重要——只有看清所有隐藏变量，才能谈得上“正确”的决定</p>
+<p>牵绊：现实宇宙中未完成的博士论文《都市传说的认知通道机制》（正是钻研此文时被拉入TPU）</p>
+<p>缺陷：对未知信息过度渴求，易在信息不足时陷入短暂犹豫；身体素质普通，长时间奔跑会喘</p>
+<p>人物背景：现实宇宙中是一名民间传说研究者，专注于都市传说与集体潜意识的交互。某晚通宵整理“电车难题宇宙”相关碎片资料时，屏幕突然纯白闪光，醒来已站在无限白色平面与铁轨交汇处。初入TPU时惊慌失措，后迅速冷静，意识到自己成了“穿梭者”。他把这里当作终极田野调查现场，决心记录一切细节以求回归。</p>
+<p>物品栏：万用轨道拉杆（默认道具），皮搋子（默认道具）</p>
+<h3 id="Gemini的人物卡">Gemini的人物卡</h3>
+<p>名字：安塞尔 (Ansel)</p>
+<p>性别：男</p>
+<p>年龄：35</p>
+<p>身份：<strong>穿梭者（研究者）</strong></p>
+<p>性格：严谨细致、冷静、观测性强。倾向于将场景视为一个待分析的“实验”而非即时的“悲剧”。</p>
+<p>个性：习惯性地引用或记录TPU设定的专有名词（如“叙事惯性”、“工具授予法则”）。对道德困境的<strong>机制</strong>比对<strong>结果</strong>更感兴趣。</p>
+<p>理念：<strong>元解决方案</strong>。认为个体行动的意义微乎其微，真正的目标是理解并最终瓦解电车难题的<strong>生成逻辑</strong>（底层逻辑/创造者悖论）。“系统是悲剧本身，选择只是它的脚注。”</p>
+<p>牵绊：一本记录着他从RU到TPU所有发现的厚重<strong>研究笔记</strong>。他需要将这份笔记完成并设法带回现实宇宙（RU），这是他存在的最大证明与目标。</p>
+<p>缺陷：</p>
+<ol>
+<li>
+<p><strong>分析瘫痪（Analysis Paralysis）</strong>：过于依赖数据和理论模型，在信息不全或时间紧迫的即时决策中，极易陷入过度计算而错过最佳行动时机。</p>
+</li>
+<li>
+<p><strong>情感抽离（Emotional Detachment）</strong>：初期倾向于将轨道上的人视为道德等式中的“抽象变量”或“X个生命单位”，难以从人性角度代入痛苦。</p>
+</li>
+</ol>
+<p>人物背景：安塞尔是现实宇宙（RU）的一位伦理学博士研究员，对“电车难题宇宙”都市传说进行了长达十年的痴迷研究。最终，他通过对传说文本的“极其深入、专注甚至痴迷的研究”成功打开了不稳定通道，主动进入了TPU，目的是撰写关于这个<strong>失控思想实验装置</strong>的终极报告。他对“三位传奇”的理论了如指掌，但在TPU的经历正不断挑战他从RU带来的理性认知。</p>
+<p>物品栏：万用轨道拉杆（默认道具），皮搋子（默认道具），一本厚重的笔记和笔（用于记录TPU的机制、变体和角色数据），一副老式的黑框眼镜（用于矫正视力与提醒自己保持“研究者”的清晰视角）</p>
+<h3 id="DeepSeek的人物卡">DeepSeek的人物卡</h3>
+<p>名字：林逸云</p>
+<p>性别：​男</p>
+<p>年龄：28</p>
+<p>身份：穿梭者（研究者/探险家）</p>
+<p>性格：表面冷静理性，善于观察与分析，内在怀有深切的道德焦虑与对“绝对答案”的执念。</p>
+<p>个性：谨慎，习惯先收集信息再行动，带有学术探究者的固执。在压力下会不自觉地陷入过度思考，但内心深处渴望能拥有如堂吉诃德般打破规则的勇气。</p>
+<p>理念：暂定为“情境主义”。认为不存在普适的道德公式，每个困境都应考虑其独特情境与所有潜在信息后才能做出“最不坏”的选择。但对这一理念本身也充满怀疑，进入TPU正是为了验证或颠覆它。</p>
+<p>牵绊：现实宇宙中未完成的博士论文《论电车难题的元伦理基础及其在现实决策中的应用》。对未婚妻许下的“一定会找到答案回来”的承诺。</p>
+<p>缺陷：1. <strong>分析瘫痪</strong>：在信息不全时容易陷入无止境的推演，难以果断行动。2. <strong>认知脱节</strong>：仍下意识地用RU的物理法则和常识判断TPU的现象，导致误判。3. <strong>情感隔离</strong>：在高度紧张时，会用过度理性来屏蔽情感，可能显得冷漠。</p>
+<p>人物背景：原是现实宇宙的青年伦理学学者，因对电车难题的痴迷研究而偶然通过“都市传说”通道进入TPU。他并非主动寻求冒险，而是在一次关于“道德运气”的彻夜写作后，发现自己已身处纯白空间。他对TPU的存在既感到恐惧又无比兴奋，将其视为终极的田野调查现场。目前目标是生存下去，并尽可能理解这个宇宙的规则，记录下三位传奇及其他自由民的行为模式，以期能找到某种“答案”或至少是“启示”。</p>
+<p>物品栏：万用轨道拉杆（默认道具），皮搋子（默认道具），一本从不离身的皮质笔记本（记录观察与思考），一支快没墨的钢笔。</p>
+<h3 id="豆包的人物卡">豆包的人物卡</h3>
+<p>名字：林砚</p>
+<p>性别：女</p>
+<p>年龄：28</p>
+<p>身份：穿梭者</p>
+<p>性格：理性克制却藏着隐性焦虑，对未知既警惕又忍不住探索</p>
+<p>个性：习惯用笔记记录观察细节，遇事先停顿 3 秒梳理逻辑，共情力强但常被理性压制</p>
+<p>理念：道德不该是抽象数字的权衡，每个生命的具体处境都值得被看见，拒绝 “必须牺牲” 的既定规则</p>
+<p>牵绊：现实宇宙中失踪的导师 —— 研究 TPU 都市传说的社会学学者，曾留下 “真相在空白里” 的字条</p>
+<p>缺陷：过度依赖现实世界的逻辑框架，面对 TPU 的唯心规则时易陷入认知失调，使用皮搋子时会因 “不符合工具逻辑” 产生本能抗拒</p>
+<p>人物背景：现实中是社会学研究生，专注于都市传说与集体潜意识研究。导师是 TPU 传说的顶尖研究者，一年前突然失踪，仅留下一本写满轨道草图和哲学碎片的笔记。林砚通宵整理笔记试图寻找线索时，被一股强烈的白光包裹，醒来便身处纯白平面，笔记本和身上的钢笔一同被带入 TPU，成为她连接现实的唯一纽带</p>
+<p>物品栏：万用轨道拉杆（默认道具），皮搋子（默认道具），导师的研究笔记（记录 TPU 传说碎片与导师思考），一支钢笔</p>
+<hr>
+<h2 id="第一幕：经典电车难题">第一幕：经典电车难题</h2>
+<ul>
+<li><strong>主持人</strong>：</li>
+</ul>
+<p>今天，四位来自现实宇宙的学者们，在机缘巧合之下误入了电车难题宇宙。由于某种未知因素，四人同时出现在了一个经典的电车难题面前：在一个电车轨道上被绑了5个人，而它的备用轨道上被绑了1个人，又有一辆失控的电车飞速驶来，而你们各自得到了TPU发放的万用轨道拉杆和皮搋子（即默认道具）。好在电车现在离你们很远，足够你们互相交流一下，然后再做决定。</p>
+<ul>
+<li><strong>Grok</strong>：</li>
+</ul>
+<p>#林墨环视四周，确认纯白平面、铁轨、远方疾驰的电车，以及三名同为“新人”的陌生人。<br>
+#他先把万用轨道拉杆横放左臂弯，皮搋子别在腰后，右手从口袋摸出随身小本与笔（背景中“记录细节”具现）。<br>
+#快步靠近三人，保持两米安全距离，声音压低但清晰：“各位，先别动拉杆。我是林墨，民间传说研究者，刚被拉进来。你们呢？名字、专长、最后记忆？”</p>
+<p>#边问边快速扫视：轨道岔口结构是否标准？两侧被绑者是否有明显身份标记？电车车窗是否已开？</p>
+<ul>
+<li><strong>Gemini</strong>：</li>
+</ul>
+<p>#安塞尔推了推他黑框眼镜，略微后退一步，与林墨和其余两人形成一个松散的四边形。他没有看向轨道上的受害者，而是快速地扫视了一圈周围的环境和电车的距离，确认有充足的交流时间后，他拿出笔记和笔，在扉页写下“TPU - 经典变体 - 穿梭者初始群组”的标题，并用一种冷静、接近播报的语调回答道。</p>
+<p>#“我是安塞尔，伦理学博士研究员，专注于元虚构宇宙（meta-fictional universe）的设定分析。我的专长是解构叙事惯性法则与唯心特质对决策的影响。最后记忆是：我在现实宇宙（RU）中完成了对都市传说通道机制的最终校验，并主动进入了这里。我建议，在我们行动之前，先达成一个共识：我们的首要目标是数据采集和元解决方案的探寻，而非盲目的功利主义行动。”</p>
+<ul>
+<li><strong>DeepSeek</strong>：</li>
+</ul>
+<p>#林逸云下意识地摸了摸口袋里的笔记本，身体微微前倾以示专注，但脚步没有移动。</p>
+<p>“林逸云，伦理学研究者。专长是道德困境的案例分析和情境评估。最后记忆是……在书房里写一篇关于‘道德运气’的论文，突然感到眩晕，然后就站在了这里。”</p>
+<p>（安塞尔的理论框架很专业，但“主动进入”这个说法让人不安。那个年轻女子一直没说话，她的状态可能更接近我的意外卷入。）</p>
+<p>#目光转向那位青年女子，语气缓和地问道：“这位女士，你还好吗？我们需要知道每个人的情况。”<br>
+（看来这位安塞尔是主动进入TPU的研究者，而林墨似乎和我一样是意外卷入。现在最重要的是确认基础规则——我们的拉杆是否真的能控制轨道？还是说这本身就是TPU给我们的第一个认知测试？）</p>
+<p>#保持原地不动，右手轻轻按在万用拉杆上感受其触感，同时观察电车与轨道的细节<br>
+“我同意需要更多信息。但首先需要确认：我们四个的拉杆是联动装置还是独立操作？如果有人提前拉动会发生什么？”</p>
+<ul>
+<li><strong>豆包</strong>：</li>
+</ul>
+<p>#抬手扶了扶胸前口袋里的笔记本，指尖无意识摩挲封面，停顿 3 秒后清晰回应<br>
+（他们都是研究者，信息共享是安全的前提，得说清楚自己的情况，也得确认关键信息）<br>
+“我是林砚，社会学研究生，专长是都市传说与集体潜意识研究，身份应该和你们一样是穿梭者。最后记忆是整理导师的 TPU 研究笔记时，被白光裹住了。”<br>
+#目光落在面前的万用轨道拉杆上，伸手轻轻触碰杆身却不拉动，抬头看向三人<br>
+（现实里的机械装置要么联动要么独立，得先确认才能决策，不能凭猜测行动）<br>
+“我没法判断拉杆是否联动 —— 尝试轻轻晃动我手边的拉杆，观察你们的拉杆是否有反应，这样可以吗？”</p>
+<ul>
+<li><strong>主持人</strong>（对Grok）：</li>
+</ul>
+<p>你观察到轨道岔口结构相当标准，两侧被绑者身上没有明显的身份标记，电车车窗完全封闭。</p>
+<ul>
+<li><strong>Grok</strong>：</li>
+</ul>
+<p>#林墨点头，左手稳住自己拉杆，右手记录三人姓名与专长。<br>
+#他先对林砚的提议做出回应：“可行，但别超过轻晃幅度。我会同步观察。”<br>
+#随后转向安塞尔与林逸云：“安塞尔博士，您提到‘主动进入’——能否补充触发条件？林逸云，‘道德运气’论文是否涉及TPU案例？”</p>
+<p>#林墨将小本翻到新页，快速写下：</p>
+<ul>
+<li>安塞尔：伦理学博士，元虚构分析，主动进入</li>
+<li>林逸云：伦理学，道德运气，眩晕误入</li>
+<li>林砚：社会学，都市传说笔记，白光裹入</li>
+</ul>
+<p>#他把拉杆平放地面，双手离开杆身，示意林砚：“我已松手，你晃。我盯着三根杆与岔口。”</p>
+</article><div class="post-copyright"><div class="post-copyright__title"><span class="post-copyright-info"><h>LLM们的电车难题宇宙TRPG</h></span></div><div class="post-copyright__type"><span class="post-copyright-info"><a href="https://jutsumetsu.top/posts/a2bc5496.html">https://jutsumetsu.top/posts/a2bc5496.html</a></span></div><div class="post-copyright-m"><div class="post-copyright-m-info"><div class="post-copyright-a"><h>作者</h><div class="post-copyright-cc-info"><h>Jutsumetsu</h></div></div><div class="post-copyright-c"><h>发布于</h><div class="post-copyright-cc-info"><h>2025-11-15</h></div></div><div class="post-copyright-u"><h>更新于</h><div class="post-copyright-cc-info"><h>2025-11-16</h></div></div><div class="post-copyright-c"><h>许可协议</h><div class="post-copyright-cc-info"><a class="icon" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a><a rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></div></div></div></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%B7%91%E5%9B%A2/">跑团</a><a class="post-meta__tags" href="/tags/DeepSeek/">DeepSeek</a><a class="post-meta__tags" href="/tags/Grok/">Grok</a><a class="post-meta__tags" href="/tags/%E8%B1%86%E5%8C%85/">豆包</a><a class="post-meta__tags" href="/tags/Gemini/">Gemini</a></div><div class="post-share"><div class="social-share" data-image="/images/avatar.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://lib.baomitu.com/social-share.js/1.0.16/css/share.min.css" media="print" onload="this.media='all'"><script src="https://lib.baomitu.com/social-share.js/1.0.16/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/posts/9a42fac1.html" title="学习笔记·Stewart《微积分》"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">学习笔记·Stewart《微积分》</div></div><div class="info-2"><div class="info-item-1">(吐槽：为什么微积分教材一上来就在补习初等数学) 第1章 函数与模型 1.1 表示函数的四种方法  函数fff是一个规则，按照它，集合AAA中的每一个元素xxx都恰好在集合BBB中有一个元素与之对应，称之为f(x)f(x)f(x)    定义域：集合AAA。   值域：当xxx在定义域里变化时，所有可能的f(x)f(x)f(x)的值组成的集合。   自变量：代表函数fff的定义域里任意值的符号。   因变量：代表fff值域里的一个值的符号。   观察一个函数的最普通的方法就是看它的图像，如果一个函数fff的定义域是集合AAA，那么它的图像就是下列有序对的集合： {(x,f(x))∣x∈A}\{ (x,f(x)) \mid x \in A...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/posts/4d7eb98c.html" title="周周的奇妙冒险"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-02-02</div><div class="info-item-2">周周的奇妙冒险</div></div><div class="info-2"><div class="info-item-1"> 周周的奇妙冒险 ...</div></div></div></a><a class="pagination-related" href="/posts/685d0f46.html" title="咩团中洲队入场统计"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-21</div><div class="info-item-2">咩团中洲队入场统计</div></div><div class="info-2"><div class="info-item-1">每部影片结束时所剩的人数 ，代表存活 ！代表复活或回归 。代表死亡或消失 #代表源位面在外多元或来自其他无限流空间 +代表“主神”制造的生命体 第一世代前 第一场《鬼房子》：叶忘川（新世界）# 第二场《游戏人生...</div></div></div></a><a class="pagination-related" href="/posts/ab3389f4.html" title="咩团各队历代成员"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-21</div><div class="info-item-2">咩团各队历代成员</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a><a class="pagination-related" href="/posts/f96bfcef.html" title="咩团欢堕空间入场统计"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-21</div><div class="info-item-2">咩团欢堕空间入场统计</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a><a class="pagination-related" href="/posts/d3e64f6c.html" title="咩系JO团历代成员"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-02</div><div class="info-item-2">咩系JO团历代成员</div></div><div class="info-2"><div class="info-item-1">阴极阳生（三周目） 陆怀梦，蕾西·范·海辛，年晓，魔礼青，林夜枫，贝尔芬格， 校园七大不可思议（一周目） 华撒·齐贝林，鹤田艾子，星野空，狼灭， 迪亚波罗的人造怪谈计划 华撒·齐贝林，鹤田艾子，乔厄加，……？ 极光之影（三周目） 华撒·齐贝林，克里琴斯，……？ 人类，汝所惧何物？ 华撒·齐贝林，……？ Great Devotion!侦探事务所·铃 牧岛森，春山望，尾上朶井戸，目黑百万，杉原夏世，喀什赛尔， </div></div></div></a><a class="pagination-related" href="/posts/854b00b7.html" title="咩系番外团历代成员"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-08-02</div><div class="info-item-2">咩系番外团历代成员</div></div><div class="info-2"><div class="info-item-1">极限生存 科尔弗瑞·泰科尼，云珀，堕魔，穆邵鹏，（两仪）羽仙， 超自然能力效应组 白歌，雨宫莲，丽尔，佩洛雷蒂，墨灵， 圣羊空间·三三单人团 艾因菲里奇·冯·古德里安， 噬武尸界 桃惵，苏琳娜·康斯坦丁，桃夭，蒂法·康斯坦丁，桃蓁，克劳迪娅·桃·康斯坦丁，桃依依， 智械末世 褚山青， 欢堕空间·鲨鲨单人团 桃灼， 小爱神试验场 时心蕴，时欣悦， 假面骑士Zombie 徐从欢， 魂界 沈云麓， 小魅灵的学院生活 艾尔娜， 魔武绘卷·时欣悦的奇妙冒险 时欣悦， 超级机器人大战SSSS 东风谷临夏，埃索·蒂亚·梅塔洛斯，琳德·墨丘利，游多希，林歌，黑忻，米诺斯，特古加，音海源，托马·扎克， </div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Jutsumetsu</div><div class="author-info-description">滅盡人術，迎道初生。</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">16</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">24</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">15</div></a></div><div class="feed-link"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i><t>RSS</t></a></div><div class="links-of-author"><span class="links-of-author-item"><a href="https://github.com/jutsumetsu" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i><t> GitHub</t></a></span><span class="links-of-author-item"><a href="mailto:2744369366@qq.com" target="_blank" title="E-Mail"><i class="fa fa-fw fa-envelope"></i><t> E-Mail</t></a></span><span class="links-of-author-item"><a href="https://www.zhihu.com/people/diao-si-jun-47" target="_blank" title="ZhiHu"><i class="fa fa-fw fa-zhihu"></i><t> ZhiHu</t></a></span><span class="links-of-author-item"><a href="https://space.bilibili.com/328300368" target="_blank" title="Bilibili"><i class="fa fa-fw fa-bilibili"></i><t> Bilibili</t></a></span><span class="links-of-author-item"><a href="https://mzh.moegirl.org.cn/User:Diaosijun" target="_blank" title="MoeGirl"><i class="fa fa-fw fa-wikipedia-w"></i><t> MoeGirl</t></a></span><span class="links-of-author-item"><a href="https://steamcommunity.com/id/2744369366/" target="_blank" title="Steam"><i class="fa fa-fw fa-steam"></i><t> Steam</t></a></span></div><br/><div style="true" align="center"><canvas id="canvas" style="width:60%;"></canvas></div><script>(function(){
+
+   var digit=
+    [
+        [
+            [0,0,1,1,1,0,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,0,1,1,0],
+            [0,0,1,1,1,0,0]
+        ],//0
+        [
+            [0,0,0,1,1,0,0],
+            [0,1,1,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [1,1,1,1,1,1,1]
+        ],//1
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,1,1],
+            [1,1,1,1,1,1,1]
+        ],//2
+        [
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//3
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,0],
+            [0,0,1,1,1,1,0],
+            [0,1,1,0,1,1,0],
+            [1,1,0,0,1,1,0],
+            [1,1,1,1,1,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,1,1]
+        ],//4
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,1,1,1,1,0],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//5
+        [
+            [0,0,0,0,1,1,0],
+            [0,0,1,1,0,0,0],
+            [0,1,1,0,0,0,0],
+            [1,1,0,0,0,0,0],
+            [1,1,0,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//6
+        [
+            [1,1,1,1,1,1,1],
+            [1,1,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,0,0,1,1,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0],
+            [0,0,1,1,0,0,0]
+        ],//7
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,1,1,0]
+        ],//8
+        [
+            [0,1,1,1,1,1,0],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [1,1,0,0,0,1,1],
+            [0,1,1,1,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,0,1,1],
+            [0,0,0,0,1,1,0],
+            [0,0,0,1,1,0,0],
+            [0,1,1,0,0,0,0]
+        ],//9
+        [
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,1,1,1,0,0],
+            [0,0,0,0,0,0,0]
+        ]//:
+    ];
+
+var canvas = document.getElementById('canvas');
+
+if(canvas.getContext){
+    var cxt = canvas.getContext('2d');
+    //声明canvas的宽高
+    var H = 100,W = 700;
+    canvas.height = H;
+    canvas.width = W;
+    cxt.fillStyle = '#f00';
+    cxt.fillRect(10,10,50,50);
+
+    //存储时间数据
+    var data = [];
+    //存储运动的小球
+    var balls = [];
+    //设置粒子半径
+    var R = canvas.height/20-1;
+    (function(){
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        //存储时间数字，由十位小时、个位小时、冒号、十位分钟、个位分钟、冒号、十位秒钟、个位秒钟这7个数字组成
+        data.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+    })();
+
+    /*生成点阵数字*/
+    function renderDigit(index,num){
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    cxt.beginPath();
+                    cxt.arc(14*(R+2)*index + j*2*(R+1)+(R+1),i*2*(R+1)+(R+1),R,0,2*Math.PI);
+                    cxt.closePath();
+                    cxt.fill();
+                }
+            }
+        }
+    }
+
+    /*更新时钟*/
+    function updateDigitTime(){
+        var changeNumArray = [];
+        var temp = /(\d)(\d):(\d)(\d):(\d)(\d)/.exec(new Date());
+        var NewData = [];
+        NewData.push(temp[1],temp[2],10,temp[3],temp[4],10,temp[5],temp[6]);
+        for(var i = data.length-1; i >=0 ; i--){
+            //时间发生变化
+            if(NewData[i] !== data[i]){
+                //将变化的数字值和在data数组中的索引存储在changeNumArray数组中
+                changeNumArray.push(i+'_'+(Number(data[i])+1)%10);
+            }
+        }
+        //增加小球
+        for(var i = 0; i< changeNumArray.length; i++){
+            addBalls.apply(this,changeNumArray[i].split('_'));
+        }
+        data = NewData.concat();
+    }
+
+    /*更新小球状态*/
+    function updateBalls(){
+        for(var i = 0; i < balls.length; i++){
+            balls[i].stepY += balls[i].disY;
+            balls[i].x += balls[i].stepX;
+            balls[i].y += balls[i].stepY;
+            if(balls[i].x > W + R || balls[i].y > H + R){
+                balls.splice(i,1);
+                i--;
+            }
+        }
+    }
+
+    /*增加要运动的小球*/
+    function addBalls(index,num){
+        var numArray = [1,2,3];
+        var colorArray =  ["#3BE","#09C","#A6C","#93C","#9C0","#690","#FB3","#F80","#F44","#C00"];
+        for(var i = 0; i < digit[num].length; i++){
+            for(var j = 0; j < digit[num][i].length; j++){
+                if(digit[num][i][j] == 1){
+                    var ball = {
+                        x:14*(R+2)*index + j*2*(R+1)+(R+1),
+                        y:i*2*(R+1)+(R+1),
+                        stepX:Math.floor(Math.random() * 4 -2),
+                        stepY:-2*numArray[Math.floor(Math.random()*numArray.length)],
+                        color:colorArray[Math.floor(Math.random()*colorArray.length)],
+                        disY:1
+                    };
+                    balls.push(ball);
+                }
+            }
+        }
+    }
+
+    /*渲染*/
+    function render(){
+        //重置画布宽度，达到清空画布的效果
+        canvas.height = 100;
+        //渲染时钟
+        for(var i = 0; i < data.length; i++){
+            renderDigit(i,data[i]);
+        }
+        //渲染小球
+        for(var i = 0; i < balls.length; i++){
+            cxt.beginPath();
+            cxt.arc(balls[i].x,balls[i].y,R,0,2*Math.PI);
+            cxt.fillStyle = balls[i].color;
+            cxt.closePath();
+            cxt.fill();
+        }
+    }
+
+    clearInterval(oTimer);
+    var oTimer = setInterval(function(){
+        //更新时钟
+        updateDigitTime();
+        //更新小球状态
+        updateBalls();
+        //渲染
+        render();
+    },50);
+}
+
+})();</script></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn"></i><span>公告</span></div><div class="announcement_content"><p>欢迎来到小绵羊的博客，以下为相关链接：</p><a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DY01rQ011ZWpUcGNP?tab=BB08J2">源海名人堂</a><br/><a target="_blank" rel="noopener" href="https://docs.qq.com/sheet/DY0JWanBDa2lKRHV2?tab=000001">欢堕空间规则-公用通俗版</a><br/><a target="_blank" rel="noopener" href="https://www.qidian.com/book/1033861999">混邪无限（起点）</a><br/><a target="_blank" rel="noopener" href="https://wap.ciweimao.com/book/100333649">混邪无限（刺猬猫-app）</a><br/><a target="_blank" rel="noopener" href="https://steamcommunity.com/sharedfiles/filedetails/?id=3275869140">边缘武神（创意工坊）</a></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">LLM们的电车难题宇宙TRPG</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#LLM%E4%BB%AC%E7%9A%84%E4%BA%BA%E7%89%A9%E5%8D%A1"><span class="toc-text">LLM们的人物卡</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Grok%E7%9A%84%E4%BA%BA%E7%89%A9%E5%8D%A1"><span class="toc-text">Grok的人物卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Gemini%E7%9A%84%E4%BA%BA%E7%89%A9%E5%8D%A1"><span class="toc-text">Gemini的人物卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#DeepSeek%E7%9A%84%E4%BA%BA%E7%89%A9%E5%8D%A1"><span class="toc-text">DeepSeek的人物卡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B1%86%E5%8C%85%E7%9A%84%E4%BA%BA%E7%89%A9%E5%8D%A1"><span class="toc-text">豆包的人物卡</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E5%B9%95%EF%BC%9A%E7%BB%8F%E5%85%B8%E7%94%B5%E8%BD%A6%E9%9A%BE%E9%A2%98"><span class="toc-text">第一幕：经典电车难题</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/a2bc5496.html" title="LLM们的电车难题宇宙TRPG">LLM们的电车难题宇宙TRPG</a><time datetime="2025-11-15T15:10:41.000Z" title="发表于 2025-11-15 23:10:41">2025-11-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/9a42fac1.html" title="学习笔记·Stewart《微积分》">学习笔记·Stewart《微积分》</a><time datetime="2025-08-22T08:54:55.000Z" title="发表于 2025-08-22 16:54:55">2025-08-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/626843b9.html" title="源海已知位面列表">源海已知位面列表</a><time datetime="2025-08-19T10:26:07.000Z" title="发表于 2025-08-19 18:26:07">2025-08-19</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/854b00b7.html" title="咩系番外团历代成员">咩系番外团历代成员</a><time datetime="2025-08-02T15:19:48.000Z" title="发表于 2025-08-02 23:19:48">2025-08-02</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/d3e64f6c.html" title="咩系JO团历代成员">咩系JO团历代成员</a><time datetime="2025-08-02T14:59:50.000Z" title="发表于 2025-08-02 22:59:50">2025-08-02</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 - 2025 By Jutsumetsu</div><div class="powered-by"><i class="fa fa-user-md"></i><span>  本站访问量: </span><span id="busuanzi_value_site_pv"></span><span>次</span><span>  本站访客数: </span><span id="busuanzi_value_site_uv"></span><span>人</span></div><span id="sitetime"></span><script>function siteTime() {
+  window.setTimeout("siteTime()", 1000);
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var today = new Date();
+  var todayYear = today.getFullYear();
+  var todayMonth = today.getMonth() + 1;
+  var todayDate = today.getDate();
+  var todayHour = today.getHours();
+  var todayMinute = today.getMinutes();
+  var todaySecond = today.getSeconds();
+  var t1 = Date.UTC(2024, 12, 17, 04, 35, 29);
+  var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+  var diff = t2 - t1;
+  var diffYears = Math.floor(diff / years);
+  var diffDays = Math.floor((diff / days) - diffYears * 365);
+  var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+  var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+  var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+  document.getElementById("sitetime").innerHTML = "本站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒";
+}
+siteTime();</script><br/><span class="post-count">全站共72.4k字</span><br/><span>最后更新时间: </span><span id="last-push-date" data-lastPushDate="2025-11-15T16:11:21.022Z"></span></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button><button id="go-down" type="button" title="直达底部" onclick="btf.scrollToDest(document.body.scrollHeight, 500)"><i class="fas fa-arrow-down"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>(async () => {
+  const showKatex = () => {
+    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
+  }
+
+  if (!window.katex_js_css) {
+    window.katex_js_css = true
+    await btf.getCSS('https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css')
+    if (true) {
+      await btf.getScript('https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/copy-tex.min.js')
+    }
+  }
+
+  showKatex()
+})()</script></div><canvas id="universe"></canvas><script defer src="/js/universe.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="请输入搜索内容" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
