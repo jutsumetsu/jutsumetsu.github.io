@@ -9,12 +9,11 @@ $(document).ready(function () {
         xhr.onreadystatechange = function(){
             if (xhr.readyState === 4 && xhr.status === 200){
                 console.log('数据已成功发送到服务器');
+                alert("提交成功！");
             };
         }
         xhr.send(localStorage.getItem('TRPGFrom'));
-        localStorage.removeItem('TRPGFrom');
         score = JSON.parse(localStorage.getItem('Score'));
-        localStorage.removeItem('Score');
         model = await $.getJSON('POT.json');
 
         if (model == undefined || score == undefined) {
@@ -209,5 +208,18 @@ $(document).ready(function () {
             a.href = canvas.toDataURL("image/png");
             a.click();
         };
+    });
+
+    $("#btn-result-submit").click(function () {
+        const xhr = new XMLHttpRequest();
+        xhr.open('POST', 'https://backend.jutsumetsu.top/api/questionnaire', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function(){
+            if (xhr.readyState === 4 && xhr.status === 200){
+                console.log('数据已成功发送到服务器');
+                alert("提交成功！");
+            };
+        }
+        xhr.send(localStorage.getItem('TRPGFrom'));
     });
 });
