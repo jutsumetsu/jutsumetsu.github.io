@@ -59,7 +59,7 @@ function submitTRPGFrom(shouldTurn){
         alert('人物卡年龄不能为空');
         return;
     }
-    else if (isNaN(Qnumber)){
+    else if (isNaN(parseFloat(pcage)) || !isFinite(pcage)){
         alert('人物卡年龄应当为数字');
         return;
     }
@@ -122,4 +122,81 @@ $("#btn-submit").click(function(){
 $("#btn-quiz").click(function(){
     submitTRPGFrom(true);
     location.href= './quiz.html';
+});
+
+const AUTO_SAVE_KEY = 'TRPGFormAutoSave';  // 独立存储 key，不影响原有逻辑
+
+// 保存所有表单数据到 localStorage
+function saveFormData() {
+    const formData = {
+        // 文本输入框 / 文本域
+        Qnumber: $('#Qnumber').val(),
+        preBG: $('#preBG').val(),
+        pcname: $('#pcname').val(),
+        pcage: $('#pcage').val(),
+        pcsex: $('#pcsex').val(),
+        pcstatus: $('#pcstatus').val(),
+        pcBG: $('#pcBG').val(),
+        RPT1: $('#RPT1').val(),
+        RPT2: $('#RPT2').val(),
+        RPT3: $('#RPT3').val(),
+        // 单选按钮组
+        moral: $('input[name="moral"]:checked').val() || '',
+        lawful: $('input[name="lawful"]:checked').val() || '',
+        politics: $('input[name="politics"]:checked').val() || ''
+    };
+    localStorage.setItem(AUTO_SAVE_KEY, JSON.stringify(formData));
+}
+
+// 从 localStorage 恢复数据到表单
+function loadFormData() {
+    const saved = localStorage.getItem(AUTO_SAVE_KEY);
+    if (!saved) return;
+
+    try {
+        const data = JSON.parse(saved);
+        // 恢复文本类输入框
+        $('#Qnumber').val(data.Qnumber || '');
+        $('#preBG').val(data.preBG || '');
+        $('#pcname').val(data.pcname || '');
+        $('#pcage').val(data.pcage || '');
+        $('#pcsex').val(data.pcsex || '');
+        $('#pcstatus').val(data.pcstatus || '');
+        $('#pcBG').val(data.pcBG || '');
+        $('#RPT1').val(data.RPT1 || '');
+        $('#RPT2').val(data.RPT2 || '');
+        $('#RPT3').val(data.RPT3 || '');
+
+        // 恢复单选按钮组
+        if (data.moral) {
+            $(`input[name="moral"][value="${data.moral}"]`).prop('checked', true);
+        }
+        if (data.lawful) {
+            $(`input[name="lawful"][value="${data.lawful}"]`).prop('checked', true);
+        }
+        if (data.politics) {
+            $(`input[name="politics"][value="${data.politics}"]`).prop('checked', true);
+        }
+    } catch (e) {
+        console.error('恢复表单数据失败', e);
+    }
+}
+
+// 页面加载完成后执行
+$(function () {
+    // 1. 恢复之前保存的数据
+    loadFormData();
+
+    // 2. 监听表单变化，实时保存
+    // 文本输入框和文本域使用 input 事件
+    $('#TRPG input[type="text"], #TRPG textarea').on('input', function () {
+        saveFormData();
+    });
+    // 单选按钮使用 change 事件
+    $('#TRPG input[type="radio"]').on('change', function () {
+        saveFormData();
+    });
+
+    // 3. 恢复数据后，手动触发 politics 的 change 事件，以正确显示按钮
+    $('input[name="politics"]').trigger('change');
 });
