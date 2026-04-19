@@ -222,4 +222,9 @@ $(document).ready(function () {
         }
         xhr.send(localStorage.getItem('TRPGFrom'));
     });
+
+    $("#btn-result-clear").click(function () {
+        localStorage.removeItem('TRPGFrom');
+        localStorage.removeItem('Score');
+    });
 });
