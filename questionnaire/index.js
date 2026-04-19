@@ -102,7 +102,11 @@ function submitTRPGFrom(shouldTurn){
     xhr.onreadystatechange = function(){
         if (xhr.readyState === 4 && xhr.status === 200){
             console.log('数据已成功发送到服务器');
-        };
+            alert("提交成功！");
+        }
+        else{
+            alert("提交失败！");
+        }
     }
     // 这里可以进一步处理数据，比如发送到服务器
     if(!shouldTurn){
