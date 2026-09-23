@@ -55,6 +55,26 @@ div#archive {
   border-radius: 20px;
 }
 
+/* 标题大小设置 */
+.post-body h1 {
+  font-size: 2.25em;
+}
+.post-body h2 {
+  font-size: 2em;
+}
+.post-body h3 {
+  font-size: 1.75em;
+}
+.post-body h4 {
+  font-size: 1.5em;
+}
+.post-body h5 {
+  font-size: 1.25em;
+}
+.post-body h6 {
+  font-size: 1em;
+}
+
 /* 导航栏 */
 #page-header.nav-fixed #nav {
   background: rgba(255, 255, 255, 0.75);
